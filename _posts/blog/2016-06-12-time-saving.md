@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何节约时间
-description:从一本书中抄来的 
+description: 从一本书中抄来的 
 category: blog
 ---
 
