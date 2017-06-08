@@ -5,7 +5,7 @@ highlighter: rouge
 paginate: 8
 permalink: /:title
 
-title: Steven Wang's Web
+title: Welcome to Steven Wang's homepage!
 url: http://www.wangdingwen.net
 feed: /atom.xml
 author_info: <a href="http://www.wangdingwen.net/">Steven Wang</a>
