@@ -1,12 +1,8 @@
 ---
 layout: post
 title: (>>>POINT<<<)
-description: 
+description:
 category: blog
 ---
 
-### 
-
-
-
-
+##
