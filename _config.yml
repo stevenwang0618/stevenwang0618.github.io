@@ -1,5 +1,5 @@
 auto: true
-
+plugins: [jekyll-paginate]
 markdown: kramdown
 highlighter: rouge
 paginate: 8
