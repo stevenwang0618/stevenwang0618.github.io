@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         Steven
+    -->
+    <meta charset="utf-8" />
+    <title>jekyll 安装 | Welcome to Steven Wang's homepage!</title>
+    <meta name="author" content="Steven" />
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="Steven Wang's Blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/atom.xml" />
+    <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="home-menu">
+        <div class="home-icon-con">
+            <a class="home-menu-icon" href="/">Steven Wang</a>
+            <a class="home-follow" href="#" title="Contact Me">+</a>
+        </div>
+        <div class="home-contact">
+            <a href="http://weibo.com/stevenrubywang/" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
+            <a href="http://www.douban.com/people/61470183/" target="_blank" style="text-align:center;"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
+            <a href="http://instagram.com/stevenwang0618/" target="_blank" style="text-align:right"><img src="https://www.instagram.com/favicon.ico" alt="" width="22"/></a>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="/js/prettify/prettify.css" />
+<style type="text/css">
+    body { background:#e8e8e8; }
+    @media screen and (max-width: 750px){
+        body { background:#fff; }
+    }
+    @media screen and (max-width: 1020px){
+        body { background:#fff; }
+    }
+</style>
+
+<div id="content">
+    <div class="entry">
+        <h1 class="entry-title"><a href="/jekyll" title="jekyll 安装">jekyll 安装</a></h1>
+        <p class="entry-date">2016-11-11</p>
+        <h2 id="安装gem">安装Gem</h2>
+
+<p>检查 gem 版本</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem -v
+</code></pre></div></div>
+
+<p>更新 gem</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem update --system
+</code></pre></div></div>
+
+<h2 id="安装-jekyll">安装 jekyll</h2>
+
+<p>最新安装方式请访问<a href="https://jekyllrb.com/docs/installation/">jekyll安装</a>。</p>
+
+<p>使用 gem 安装 jekyll 和 bundler</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+</code></pre></div></div>
+
+<p>若在 Mac OSX 上会产生错误</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ERROR:  While executing gem ... (Errno::EPERM)
+Operation not permitted - /usr/bin/kramdown
+</code></pre></div></div>
+
+<p>可采用如下解决办法</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo gem install -n /usr/local/bin jekyll
+</code></pre></div></div>
+
+<p>通过如下命令在应用根目录下新建 <code class="highlighter-rouge">Gemfile</code> 文件，列出 dependencies</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle init
+</code></pre></div></div>
+
+<p>打开 <code class="highlighter-rouge">Gemfile</code> 文件,  添加 jekyll</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem "jekyll"
+</code></pre></div></div>
+
+<p>然后运行</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle
+</code></pre></div></div>
+
+<p>为应用安装 jekyll。</p>
+
+<h2 id="使用-jekyll">使用 jekyll</h2>
+
+<h3 id="博客生成">博客生成</h3>
+
+<p>网页文件默认生成在_site目录下，当然也可以在配置文件中自定义</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll build
+</code></pre></div></div>
+
+<h3 id="启动--jekyll-本地实时预览">启动  jekyll 本地实时预览</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve
+</code></pre></div></div>
+
+<p>在浏览器中输入 <code class="highlighter-rouge">http://localhost:4000</code> 即可访问博客站点。</p>
+
+<h2 id="上传至-github">上传至 Github</h2>
+
+<p>在 _post 中放入 md 文件，文件格式必须遵从 <code class="highlighter-rouge">YEAR-MONTH-DAY-title.md</code>。</p>
+
+
+    </div>
+
+    <div class="sidenav">
+        <span class="wtb-ew-v1" style="width: 204px; display:inline-block"><script src="http://www.worldtimebuddy.com/clock_widget.js?h=0&bc=00A2E8&cn=&wt=c1"></script><i><a href="http://www.worldtimebuddy.com/gmt-to-pst-converter">gmt to pst time</a></i><noscript><a href="http://www.worldtimebuddy.com/gmt-to-pst-converter">gmt to pst time</a></noscript><script>window[wtb_event_widgets.pop()].init()</script></span>
+<!---        <iframe width="100%" height="75" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=75&fansRow=2&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=1835651902&verifier=cb2e2bea&dpc=1"></iframe>--->
+    </div>
+
+    <div class="sidenav">
+        <h2>Blog</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/jekyll">jekyll 安装</a></li>
+        
+            <li><a href="/autocompletion">Mac OSX 终端命令自动补全</a></li>
+        
+            <li><a href="/thinking">一点感悟</a></li>
+        
+            <li><a href="/foucaultpendulum">Foucault Pendulum</a></li>
+        
+            <li><a href="/time-saving">如何节约时间</a></li>
+        
+            <li><a href="/athelete">运动会</a></li>
+        
+            <li><a href="/template">使用Emacs中的template</a></li>
+        
+            <li><a href="/markdown">快速学习Markdown</a></li>
+        
+            <li><a href="/first-article">我的第一篇</a></li>
+        
+        </ul>
+
+        <h2>Opinion</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/about-simplify">胡言乱语说简单</a></li>
+        
+        </ul>
+
+        <h2>Project</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/tabby">Tabby</a></li>
+        
+            <li><a href="/notty-notes">Notty Notes</a></li>
+        
+            <li><a href="/overapi-cheatsheet">OverAPI</a></li>
+        
+            <li><a href="/raining-in-chrome">听雨</a></li>
+        
+        </ul>
+    </div>
+</div>
+
+<script src="/js/post.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        $(function(){
+            $('.home-follow').click(function(e){
+                e.preventDefault();
+
+                if($('.home-contact').is(':visible')){
+                    $('.home-contact').slideUp(100);
+                }else{
+                    $('.home-contact').slideDown(100);
+                }
+            });
+        })
+    </script>
+</body>
+</html>
