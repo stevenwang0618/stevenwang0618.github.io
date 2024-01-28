@@ -1,5 +1,5 @@
 # Where things are
-auto: true
+#auto: true
 source              : .
 destination         : ./_site
 #collections_dir     : .
